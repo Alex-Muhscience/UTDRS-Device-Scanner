@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250412-0135-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.0.0"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="MUHSCIENCE"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22631)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ModelName=""
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="12714"
+	TotalPhysicalMemory="8022"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2904"
+	>
+	<Testing>
+		<StartDateTime>Apr 12 04:35 E. Africa Standard Time</StartDateTime>
+		<StartTestTime>1744421703</StartTestTime>
+		<TestList/>
+		<EndDateTime>Apr 12 04:35 E. Africa Standard Time</EndDateTime>
+		<EndTestTime>1744421703</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

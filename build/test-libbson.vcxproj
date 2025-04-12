@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1BD399B-06AC-3E6E-A34B-1F1373608994}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>test-libbson</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test-libbson.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test-libbson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test-libbson.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test-libbson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test-libbson.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test-libbson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test-libbson.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test-libbson</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BINARY_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary";JSON_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BINARY_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary\";JSON_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\bson-1.0.lib;Debug\bson-static-1.0.lib;C:\msys64\mingw64\lib\libm.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Personal_Projects/UTDRS Device Scanner/build/Debug/test-libbson.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Personal_Projects/UTDRS Device Scanner/build/Debug/test-libbson.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary";JSON_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary\";JSON_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\bson-1.0.lib;Release\bson-static-1.0.lib;C:\msys64\mingw64\lib\libm.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Personal_Projects/UTDRS Device Scanner/build/Release/test-libbson.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Personal_Projects/UTDRS Device Scanner/build/Release/test-libbson.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary";JSON_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary\";JSON_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\bson-1.0.lib;MinSizeRel\bson-static-1.0.lib;C:\msys64\mingw64\lib\libm.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Personal_Projects/UTDRS Device Scanner/build/MinSizeRel/test-libbson.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Personal_Projects/UTDRS Device Scanner/build/MinSizeRel/test-libbson.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary";JSON_DIR="D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BINARY_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/binary\";JSON_DIR=\"D:/Personal_Projects/UTDRS Device Scanner/libbson//tests/json\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Personal_Projects\UTDRS Device Scanner\build\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson;D:\Personal_Projects\UTDRS Device Scanner\libbson\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\bson-1.0.lib;RelWithDebInfo\bson-static-1.0.lib;C:\msys64\mingw64\lib\libm.a;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Personal_Projects/UTDRS Device Scanner/build/RelWithDebInfo/test-libbson.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Personal_Projects/UTDRS Device Scanner/build/RelWithDebInfo/test-libbson.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Personal_Projects/UTDRS Device Scanner/libbson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe "-SD:/Personal_Projects/UTDRS Device Scanner/libbson" "-BD:/Personal_Projects/UTDRS Device Scanner/build" --check-stamp-file "D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\InstallRequiredSystemLibraries.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\BSONPackage.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\LoadVersion.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\MaintainerFlags.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\bson\bson-stdint.h;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-config.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-version.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-1.0.pc.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-static-1.0.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Personal_Projects/UTDRS Device Scanner/libbson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe "-SD:/Personal_Projects/UTDRS Device Scanner/libbson" "-BD:/Personal_Projects/UTDRS Device Scanner/build" --check-stamp-file "D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\InstallRequiredSystemLibraries.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\BSONPackage.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\LoadVersion.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\MaintainerFlags.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\bson\bson-stdint.h;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-config.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-version.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-1.0.pc.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-static-1.0.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Personal_Projects/UTDRS Device Scanner/libbson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe "-SD:/Personal_Projects/UTDRS Device Scanner/libbson" "-BD:/Personal_Projects/UTDRS Device Scanner/build" --check-stamp-file "D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\InstallRequiredSystemLibraries.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\BSONPackage.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\LoadVersion.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\MaintainerFlags.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\bson\bson-stdint.h;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-config.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-version.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-1.0.pc.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-static-1.0.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Personal_Projects/UTDRS Device Scanner/libbson/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\msys64\mingw64\bin\cmake.exe "-SD:/Personal_Projects/UTDRS Device Scanner/libbson" "-BD:/Personal_Projects/UTDRS Device Scanner/build" --check-stamp-file "D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CPack.cmake;C:\msys64\mingw64\share\cmake\Modules\CPackComponent.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckFunctionExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\msys64\mingw64\share\cmake\Modules\InstallRequiredSystemLibraries.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;C:\msys64\mingw64\share\cmake\Templates\CPackConfig.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\BSONPackage.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\LoadVersion.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\MaintainerFlags.cmake;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\bson\bson-stdint.h;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config-version.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\build\cmake\libbson-static-1.0-config.cmake.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-config.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\bson\bson-version.h.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-1.0.pc.in;D:\Personal_Projects\UTDRS Device Scanner\libbson\src\libbson-static-1.0.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\corpus-test.c" />
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\corpus-test.h" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\TestSuite.c" />
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\TestSuite.h" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-libbson.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-atomic.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bson.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bson-corpus.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-endian.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-clock.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-decimal128.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-error.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-iso8601.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-iter.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-json.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-oid.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-reader.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-string.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-utf8.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-value.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-version.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-writer.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bcon-basic.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bcon-extract.c" />
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\json-test.c" />
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\json-test.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Personal_Projects\UTDRS Device Scanner\build\ZERO_CHECK.vcxproj">
+      <Project>{D1C10B78-91EF-3B38-AEC7-72DAF734F3C1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Personal_Projects\UTDRS Device Scanner\build\bson_shared.vcxproj">
+      <Project>{E601C8A0-6B9D-3EB4-9110-1B8BEF1AF626}</Project>
+      <Name>bson_shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Personal_Projects\UTDRS Device Scanner\build\bson_static.vcxproj">
+      <Project>{45E9E44F-1EDC-3618-899B-B8789B35221A}</Project>
+      <Name>bson_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

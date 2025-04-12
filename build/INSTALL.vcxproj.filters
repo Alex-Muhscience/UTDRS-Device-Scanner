@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Personal_Projects\UTDRS Device Scanner\build\CMakeFiles\2325ac9bd2be26f73fd1295e43af4672\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2C40AE68-2DBF-3131-9F1A-72D88B0062F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

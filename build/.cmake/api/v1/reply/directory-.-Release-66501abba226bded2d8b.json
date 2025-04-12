@@ -1,0 +1,273 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include",
+			"install_package_config_file"
+		],
+		"files" : 
+		[
+			"C:/msys64/mingw64/share/cmake/Modules/InstallRequiredSystemLibraries.cmake",
+			"CMakeLists.txt",
+			"build/cmake/BSONPackage.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 795,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 352,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 359,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 366,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 392,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 405,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 413,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 26,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 11
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 29,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 14
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 17,
+				"parent" : 14
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/msvcp140.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/msvcp140_1.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/msvcp140_2.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/msvcp140_atomic_wait.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/msvcp140_codecvt_ids.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/vcruntime140_1.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/vcruntime140.dll",
+				"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Redist/MSVC/14.42.34433/x64/Microsoft.VC143.CRT/concrt140.dll"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Release/bson-1.0.lib"
+			],
+			"targetId" : "bson_shared::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"Release/libbson-1.0.dll"
+			],
+			"targetId" : "bson_shared::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Release/bson-static-1.0.lib"
+			],
+			"targetId" : "bson_static::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "include/libbson-1.0",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/src/bson/bson-config.h",
+				"D:/Personal_Projects/UTDRS Device Scanner/build/src/bson/bson-stdint.h",
+				"D:/Personal_Projects/UTDRS Device Scanner/build/src/bson/bson-version.h",
+				"/src/bson/bcon.h",
+				"/src/bson/bson-atomic.h",
+				"/src/bson/bson-clock.h",
+				"/src/bson/bson-compat.h",
+				"/src/bson/bson-context.h",
+				"/src/bson/bson-decimal128.h",
+				"/src/bson/bson-endian.h",
+				"/src/bson/bson-error.h",
+				"/src/bson/bson.h",
+				"/src/bson/bson-iter.h",
+				"/src/bson/bson-json.h",
+				"/src/bson/bson-keys.h",
+				"/src/bson/bson-macros.h",
+				"/src/bson/bson-md5.h",
+				"/src/bson/bson-memory.h",
+				"/src/bson/bson-oid.h",
+				"/src/bson/bson-reader.h",
+				"/src/bson/bson-stdint-win32.h",
+				"/src/bson/bson-string.h",
+				"/src/bson/bson-types.h",
+				"/src/bson/bson-utf8.h",
+				"/src/bson/bson-value.h",
+				"/src/bson/bson-version-functions.h",
+				"/src/bson/bson-writer.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/src/libbson-1.0.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/src/libbson-static-1.0.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libbson-1.0",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/libbson-1.0-config.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libbson-1.0",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/libbson-1.0-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libbson-static-1.0",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/libbson-static-1.0-config.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libbson-static-1.0",
+			"paths" : 
+			[
+				"D:/Personal_Projects/UTDRS Device Scanner/build/libbson-static-1.0-config-version.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

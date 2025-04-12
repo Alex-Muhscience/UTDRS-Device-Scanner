@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\corpus-test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\TestSuite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-libbson.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-atomic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bson.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bson-corpus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-endian.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-decimal128.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-iso8601.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-iter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-oid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-reader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-utf8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-value.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-writer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bcon-basic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\test-bcon-extract.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\json-test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\corpus-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\TestSuite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\tests\json-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Personal_Projects\UTDRS Device Scanner\libbson\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FBC0C639-3162-3C81-B51B-9B278D0DBBDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9C0B76C9-4C17-36FC-807C-54C0003669D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/bson_shared.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/bson_static.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/test-libbson.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/PACKAGE.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/RUN_TESTS.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/INSTALL.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/ALL_BUILD.dir
+D:/Personal_Projects/UTDRS Device Scanner/build/CMakeFiles/ZERO_CHECK.dir
